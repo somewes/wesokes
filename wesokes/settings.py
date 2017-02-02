@@ -58,11 +58,11 @@ WSGI_APPLICATION = 'wesokes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('RDS_DB_NAME'),
-        'USER': os.environ.get('RDS_USERNAME'),
-        'PASSWORD': os.environ.get('RDS_PASSWORD'),
-        'HOST': os.environ.get('RDS_HOSTNAME'),
-        'PORT': os.environ.get('RDS_PORT'),
+        'NAME': os.environ.get('PG_DB_NAME'),
+        'USER': os.environ.get('PG_USERNAME'),
+        'PASSWORD': os.environ.get('PG_PASSWORD'),
+        'HOST': os.environ.get('PG_HOSTNAME'),
+        'PORT': os.environ.get('PG_PORT'),
     }
 }
 db_from_env = dj_database_url.config(conn_max_age=500)
