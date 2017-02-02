@@ -1,1 +1,1 @@
-web: gunicorn wesokes.wsgi:wesokes --log-file -
+web: gunicorn wesokes.wsgi --log-file -
